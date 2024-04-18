@@ -8,4 +8,3 @@
     <h1>Hello, JSP!</h1>
 </body>
 </html>
-localhost:8080/home
