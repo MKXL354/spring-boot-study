@@ -5,6 +5,6 @@
     <title>JSP Page</title>
 </head>
 <body>
-    <h1>Hello, ${name}!</h1>
+    <h1>Hello, ${alien.id}, ${alien.name}, ${alien.lang}!</h1>
 </body>
 </html>
