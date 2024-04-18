@@ -13,5 +13,6 @@ public class HomeController {
         mv.addObject("name", myName);
         mv.setViewName("home");
         return mv;
+        // req for: http://localhost:8080/home?name=Mahdy
     }
 }
