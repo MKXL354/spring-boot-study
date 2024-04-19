@@ -28,6 +28,7 @@ public class HomeController {
         ModelAndView mv = new ModelAndView("getAlien.jsp");
         Alien alien = repo.findById(id).orElseThrow(() -> new NoSuchElementException("Alien not found"));
         mv.addObject("alien", alien);
+        System.out.println(repo.sortByName());
         return mv;
     }
 }
