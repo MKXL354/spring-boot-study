@@ -17,13 +17,13 @@ public class HomeController {
     @Autowired
     AlienRepo repo;
 
-    @RequestMapping("/aliens")
+    @RequestMapping(path = "/aliens", produces = "application/xml")
     @ResponseBody
     public List<Alien> getlAiens() {
         return repo.findAll();
     }
 
-    @RequestMapping("/alien/{id}")
+    @RequestMapping(path = "/alien/{id}", produces = "application/xml")
     @ResponseBody
     public Optional<Alien> getAlien(@PathVariable("id") int id) {
         return repo.findById(id);
