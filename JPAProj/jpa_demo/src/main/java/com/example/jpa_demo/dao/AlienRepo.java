@@ -1,9 +1,8 @@
 package com.example.jpa_demo.dao;
 
-import org.springframework.data.repository.CrudRepository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.jpa_demo.model.Alien;
 
-public interface AlienRepo extends CrudRepository<Alien, Integer> {
+public interface AlienRepo extends JpaRepository<Alien, Integer> {
 
 }
