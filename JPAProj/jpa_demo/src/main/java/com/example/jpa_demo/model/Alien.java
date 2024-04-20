@@ -2,16 +2,18 @@ package com.example.jpa_demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "Alien")
 public class Alien {
     @Id
     private int id;
-    private String name;
+    private String alienName;
 
     @Override
     public String toString() {
-        return "Alien [id=" + id + ", name=" + name + "]";
+        return "Alien [id=" + id + ", alienName=" + alienName + "]";
     }
 
     public int getId() {
@@ -22,12 +24,12 @@ public class Alien {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getalienName() {
+        return alienName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setalienName(String alienName) {
+        this.alienName = alienName;
     }
 
 }
